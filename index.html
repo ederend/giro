@@ -1,0 +1,160 @@
+<!DOCTYPE html> 
+    <HEAD>
+        <link rel="stylesheet" href="master.css">   <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="light.css" id="theme-link">
+        <script src="js.js"></script>
+		    </HEAD>
+			   <body>
+          <link rel="stylesheet" type="text/css" href="[theme]"   id="theme-link">
+<div class="wrapper">
+<div class="theme-button" id="theme-button">Change theme</div>          
+<div class=”logo”></div><!-- переменная ответственная за логотип -->
+<div class=”t”></div><!--за разворачивающиеся сылки пример'товары' -->
+<div class=”gg”></div><!-- за текст --> <!--   -->
+<div class=”hide”></div> <!-- за раскрывающиеся пункты -->
+
+<div class=”brendpozition”></div>
+<img src="..\..\..\Desktop\31\web\img\logo.png" width="600" height="300"  ><!--лого-->
+<ul class=”t” align="left" >  <!--список с расскрывающимися пунктами из тз -->
+   <label for="hd-1"></label> <!-- слайдер -->
+      <div>
+         <!-- создаём слайда+текст  -->
+          <div class="adaptivn-slayder">
+              <div class="parag">
+                  <div class="beksun-slayda">Мы обслуживаем одинаково качественно как своих гарантийных клиентов, так и сторонние заказы.</div>
+              </div>
+
+              <div class="parag">
+                  <div class="beksun-slayda">Если деталь сломалась — в нашем центре ее не будут ремонтировать, а сразу заменят на новую</div>
+              </div>
+
+              <div class="parag">
+                  <div class="beksun-slayda"> Мы работаем с крупной сетью сервисных центров, ее филиалы находятся в 70 городах России</div>
+              </div>
+
+              <div class="parag">
+                  <div class="beksun-slayda">Гарантия действует в течении 3 лет</div>
+              </div>
+               <!-- вид стрелок+подключение js -->
+              <a class="prev" onclick="minusSlide()">❮</a>
+              <a class="next" onclick="plusSlide()">❯</a>
+          </div>
+              <!-- в зависимости от счётчика js выводит правильный слайд -->
+          <div class="uneizmen-akemada">
+              <span class="noguma-pomoki-kadra" onclick="currentSlide(1)" id="myButton"></span>
+              <span class="noguma-pomoki-kadra" onclick="currentSlide(2)"></span>
+              <span class="noguma-pomoki-kadra" onclick="currentSlide(3)"></span>
+              <span class="noguma-pomoki-kadra" onclick="currentSlide(4)"></span>
+          </div>
+
+
+
+</div>
+        <P></P></a></li> <!-- вкладка с текстом  -->
+  <li> <input class="hide" id="hd-2" type="checkbox" >
+<label for="hd-2">Особенности гироскутеров, электросамокотов и сигвеев</label><!---->
+<div>o Электросамокат - современный вариант простого самоката. Для того чтобы на нем кататься, нужно всего один раз оттолкнуться ногой от земли, обеспечив стартовое ускорение.
+   Дальше устройство будет везти хозяина самостоятельно за счет встроенного электромотора. Если выбирать между моноколесом или электросамокатом, 
+   последний будет гораздо безопаснее в эксплуатации за счет наличия 2 колес (т.е. 2 точек опоры) и ручки для опоры руками. (elsam.jpg)<br>
+o Гироскутер представляет собой конструкцию из 2 колес, расположенных по бокам от наездника и соединенных поперечной планкой-корпусом. Внутри корпуса располагаются электродвигатели, аккумуляторные батареи и гироскопы,
+ поддерживающие в горизонтальном положении площадку для ног.
+Гироскутеры никогда не оснащаются рукоятками для рук. Устройства из 2 колес, поперечной площадки и рулевого столба называются сигвеями и управляются манипуляциями руками.
+Особенность управления гироскутером состоит в том, что для движения вперед наезднику необходимо наклониться вперед. Для торможения или движения назад - наклониться назад. 
+Для поворота нужно наклонять корпус в правую или левую сторону. (gyro.jpg)<br>
+o Сигвей - средство передвижения для одного человека, которое держит равновесие с помощью специальной автобалансирующей системы. Это своеобразный электрический скутер, самостоятельно удерживающий равновесие.
+ Сигвеи бесшумны в работе, не загрязняют окружающую среду, работают на электрической энергии, накопленной батареей аккумуляторов. (seegway.jpg)
+</div>
+
+        <P></P></li><!--  -->
+  <li><input class="hide" id="hd-3" type="checkbox" >
+<label for="hd-3">Товары</label>
+<div>
+<!-- кнопки контроля -->
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"id="myButton2">Показать всё</button>
+  <button class="btn" onclick="filterSelection('electro')">электросамокаты</button>
+  <button class="btn" onclick="filterSelection('sig')">сигвеи</button>
+  <button class="btn" onclick="filterSelection('giro')">гироскуторы</button>
+</div>
+
+<!-- Фильтруемые элементы.  -->
+<div class="container">
+  <div class="textmag">
+  <div class="filterDiv sig" class="textmag">Hili E+: 39900 <br><img src=" ..\..\..\Desktop\31\web\img\tov1.jpg" width=200px height=200px alt="бренд 1" ></div>
+  <div class="filterDiv sig" class="textmag">СXiaomi Ninebot Mini : 22900 <br><img src=" ..\..\..\Desktop\31\web\img\tov2.jpg" width=200px height=200px alt="бренд 2" ></div>
+  <div class="filterDiv giro" class="textmag">KIWANO KO-X ES03 : 18900 <br><img src=" ..\..\..\Desktop\31\web\img\tov3.jpg" width=200px height=200px alt="бренд 3" ></div>
+  <div class="filterDiv sig" class="textmag">Minirobot Mini PRO 36V Белый :15990 <br><img src=" ..\..\..\Desktop\31\web\img\tov4.jpg" width=200px height=200px alt="бренд 4" ></div>
+  <div class="filterDiv electro" class="textmag">Yamato PES MINI : 15900 <br><img src=" ..\..\..\Desktop\31\web\img\tov5.jpg" width=200px height=250px alt="бренд 5" ></div>
+  <div class="filterDiv electro" class="textmag">KUGOO S2 (Jilong) : 14900 <br><img src=" ..\..\..\Desktop\31\web\img\tov6.jpg" width=200px height=200px alt="бренд 6" ></div>
+  <div class="filterDiv giro" class="textmag">Smart Balance 6.5" Ver. 1 : 8990 <br><img src=" ..\..\..\Desktop\31\web\img\tov7.jpg" width=200px height=200px alt="бренд 7" ></div>
+</div>
+</div>
+        <P></P></li>
+  <li><input class="hide" id="hd-4" type="checkbox" >
+<label for="hd-4">Бренды сотрудничающие с нами</label>
+ <div >
+      <p class="brendpozition"> <!-- бренды картинки -->
+        <img src=" ..\..\..\Desktop\31\web\img\1.jpg" width="200" height="200" alt="бренд 1">   
+        <img src=" ..\..\..\Desktop\31\web\img\2.jpg" width="200" height="200" alt="бренд 2">      
+        <img src=" ..\..\..\Desktop\31\web\img\3.png" width="300" height="200" alt="бренд 3">       
+        <img src=" ..\..\..\Desktop\31\web\img\4.jpg" width="200" height="200" alt="бренд 4">	   
+        <img src=" ..\..\..\Desktop\31\web\img\5.png" width="400" height="200" alt="бренд 5">
+    </p>
+</div>
+        <P></P></li>
+    <!--  текст -->      
+  <li>  <input class="hide" id="hd-5" type="checkbox" >
+<label for="hd-5">Кольсунтанты</label>
+<div> 
+o Иванов Иван Иванович – квалифицированный специалист сервисного центра My Gyro.<br>
+o Пупкин Василий Васильевич – старший консультант My Gyro.<br>
+o Захаров Андрей Борисович - менеджер консультант y Giro.</div>
+        <P></P></li>
+
+  <li> <input class="hide" id="hd-6" type="checkbox" >
+<label for="hd-6">Полезная информация</label>
+<div>   <!-- характеристики изображения + текст  -->
+<img src=" ..\..\..\Desktop\31\web\img\personal.jpg" width="100%" height="100%" class="logo">
+o Чтобы работать в наших магазинах нужно знать каждую модель, её плюсы и минусы и уметь ездить на ней. Да, это долго, и кто-то скажет, что неэффективно. 
+Но так мы гарантированно получаем сотрудника, который разбирается в каждом товаре и сможет по-настоящему помочь покупателю, а не “впихнуть” ему, что-нибудь подороже.
+</div>
+        <P></P></li>
+         <!--  текст  -->
+  <li> <input class="hide" id="hd-7" type="checkbox" >
+<label for="hd-7">Краткая информация о компании</label>
+<div> <form action="action_page.php"><div>
+o Наш магазин работает с 2016 года. Мы представлены в таких городах как Екатеринбург, Москва и Челябинск и многие другие. В среднем мы отправляем по 15-20 заказов в день в разные города и регионы по всей России.<br>
+o Мы имеем свои сервисные центры и собственных мастеров, благодаря которым, выполняем гарантийные работы качественно и в срок. Так же вы можете обратиться к нам с любой проблемой. 
+Мастера выполнят диагностику и выполнят ремонт.</div>
+   <!--блок с текстом и вводом информации для подписку на рассылку-->
+<div class="container">
+    <h2>Подпишитесь на нашу рассылку</h2>
+  </div>
+  <div class="container"  >
+    <input type="text" placeholder="ИМЯ" name="name" required>
+    <input type="text" placeholder="Email address" name="mail" required>
+    <label>
+      <input type="checkbox" checked="checked" name="subscribe"> РАССЫЛКА
+    </label>
+  </div>
+  <div class="container">
+    <input type="submit" value="ПОДПИСАТЬСЯ">
+  </div>
+</form></div>
+<P></P></li>
+</ul>
+ <!--   -->
+<a href=""><img src=" ..\..\..\Desktop\31\web\img\pngegg.png" width="7%" height="7%" alt="звонок" a href=”tel:+73511112203″></a><br>
+<a class="gg">телефон компании</a><br>
+<a class="gg">+7 351 111 22 3</a><br>
+<a class="gg" href="callto:+73511112203">Позвонить нам с помощью Skype</a>
+
+<div class="hor-menu"></div>  
+<a href="#" title="Вернуться к началу" class="topbutton">^Наверх</a>
+
+</html>
+ <!-- нажимает на стрелку чтобы не происходило наложение слайдов(костыль)  -->
+<script>
+  document.getElementById('myButton').click()
+  </script>
+    <script type="text/javascript" src="js.js"></script>
